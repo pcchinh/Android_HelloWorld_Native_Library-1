@@ -1,0 +1,14 @@
+
+cc_library_shared {
+     name: “libchinhpc”,
+
+     rtti: true,
+     cppflags: [
+           “-Wall”,
+           “-Werror”,
+           “-fexceptions”,
+     ],
+     local_include_dirs: ["include", "src"],
+     srcs: [“src/*.c”],
+     },
+}
